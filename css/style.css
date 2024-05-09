@@ -1,0 +1,18 @@
+.ry {
+    background-color: rgb(197, 250, 250);
+}
+.bu {
+    text-align: center;
+}
+.vu {
+    display: flex;
+    justify-content: space-around;
+}
+.vu button{
+    background-color: rgb(229, 186, 130);
+    height: 50px;
+    width: 125px;
+}
+.vu button:hover  {
+    background-color: aquamarine;
+}

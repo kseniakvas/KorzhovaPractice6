@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/zavd2.css">
+    <title>Zavd2</title>
+</head>
+<body>
+    <button><a href="index.html">Main menu</a></button>
+    <h3>Який логічний елемент описано за допомогою цієї таблиці істинності?</h3>
+    <table>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+          <th>y</th>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+      </table>
+      <select id="table" multiple onchange="choose()">
+        <option value="1">Елемент I (кон'юнкція)</option>
+        <option value="2">Елемент АБО (диз'юнкція)</option>
+        <option value="3">Елемент ВИКЛЮЧАЮЧЕ АБО (нерівнозначність)</option>
+        <option value="4">Елемент АБО-НЕ (стрілка Пірса)</option>
+        <option value="5">Елемент І-НЕ (штрих Шеффера)</option>
+        <option value="6">Елемент ВИКЛЮЧАЮЧЕ АБО-НЕ (рівнозначність)</option>
+      </select>
+    <script>
+        function choose() {
+            var table = document.getElementById("table");
+            var option = table.options[table.selectedIndex];
+            var value = option.value;
+
+            switch (value) {
+                case "1":
+                    alert("Неправильна відповідь");
+                    break;
+                case "2":
+                    alert("Неправильна відповідь");
+                    break;
+                case "3":
+                    alert("Неправильна відповідь");
+                    break;
+                case "4":
+                    alert("Правильна відповідь");
+                    break;
+                case "5":
+                    alert("Неправильна відповідь");
+                    break;
+                case "6":
+                    alert("Неправильна відповідь");
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
